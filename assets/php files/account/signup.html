@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#modal {
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px #333;
+  }
+  
+  #formHeader {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  form label{
+    text-align:left;
+  
+  }
+  label p{
+    color:var(--cadet);
+    background-color: var(--alice-blue);
+    padding:0px;
+    gap:0px;
+    text-align:left;
+  
+  
+  }
+  .container-form{
+    padding: 16px;
+    background-color:white;
+    border-radius:20px;
+    text-align:center;
+    width:30%;
+    margin:auto;
+    
+  }
+  input[type=text], input[type=password]{
+    width:100%;
+    padding:15px;
+    margin:5px 0 22px 0;
+    display:inline-block;
+    border:none;
+    background:#f1f1f1;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  signin{
+  background-color:darkblue;
+  text-align:center;
+  color:white;
+  }
+  
+    </style>
+</head>
+<body>
+   
+ <p>hello there</p>
+    <button id="btnSignIn">Account</button>
+         
+
+    <div id="modal" >
+      <form id="formSignIn">
+        <div class="container-form">
+        <div id="formHeader">Sign In</div>
+        <label for="email" ><b>Email:</b></label>
+        <input type="email" placeholder="abc@gmail.com"name="email" id="email" required>
+        
+        <label for="psw" ><b>Password:</b></label>
+        <input type="password" placeholder="Enter password" name="password" id="password" required>
+        
+        <button type="submit" class="sign-in">Sign In</button>
+      </div>
+      <div class="container-form signin">
+        <p>Don't have Account, create one <button>Sign UP</button></p>
+      </div> 
+      </form>
+    
+      <form id="formSignUp" >
+        <div class="container-form">
+        <div id="formHeader">Sign Up</div>
+        <label for="Full Name"><b>Full Name:</b></label>
+        <input type="text" placeholder="name" name="Name" id="fullName" required>
+        
+        <label for="Email"><b>Email:</b></label>
+        <input type="email" placeholder="abc@gmail.com" id="email" name="Email" required>
+        
+        <label for="Password"><b>Password:<b></label>
+        <input type="password" placeholder="password" name="password"id="password" required>
+        
+        <hr>
+        <p>By Creating an Account you agree to out <a href ="#">Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn">Sign Up</button> 
+      </div>
+       <div class="container-form signin">
+          <p>Already have an Account ?<button>Sign In</button></p>
+        
+      </div>
+    
+      </form>     
+           
+</body>
+</html>

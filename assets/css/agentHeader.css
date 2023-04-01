@@ -1,0 +1,171 @@
+
+.header-button{
+  
+    position: relative;
+    background: hsl(327, 67%, 72%);
+    color: var(--white);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-5);
+    text-transform: var(--text-transform, capitalize);
+    border: 1px solid hsl(327, 67%, 72%);  
+    padding: 7px 14px;
+    z-index: 1;
+  }
+  
+  .header-button:is(:hover, :focus) {
+    background: var(--black);
+    color: var(--dark-jungle-green);
+    border-color: var(--black);
+  }
+  
+  .header-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--white);
+    transition: var(--transition);
+    z-index: -1;
+  }
+  .header-button:is(:hover, :focus)::before { width: 100%; }
+  
+  .w-100 { width: 100%; }
+  
+  .header {
+    background-color:var(--cultured-2);
+    padding-top: 1px;
+    top:0;
+    left: 0;
+    position:relative;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .header .header-bottom{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    justify-content: space-evenly;
+  }
+  /* Logo */
+  
+  .header .header-bottom .logo img {
+    height: 4.3rem;
+    width: 7.5rem;
+    
+  }
+  
+  /* Navbar */
+  
+  .header .navbar {
+    display: flex;
+    
+    align-items: center;
+    margin-left: 1rem;
+    width:70%;
+  
+  }
+  
+ 
+  .icons{
+    height:15px;
+    width:15px;
+  }
+  .header .navbar-bottom {
+    display: flex;
+    width:40%;
+  }
+  
+  .header .navbar-list {
+    list-style: none;
+    margin-left:2rem;
+    padding: 0;
+    display: flex;
+  }
+  
+  .header .navbar-link {
+    margin-left: 1.0rem;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .header .navbar-link:hover {
+    color: var(--orange-soda);
+  }
+  
+  /* Header Actions */
+  
+  .header .header-bottom-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    text-transform: capitalize;
+  }
+  
+  .header .header-bottom-actions-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: right;
+    margin-right: 0;
+  }
+  
+  .header .header-bottom-actions-btn ion-icon {
+    font-size: 2rem;
+    margin-right: 0;
+    color: #000;
+  }
+  
+  .header .header-bottom-actions-btn span {
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+  }
+  
+  /* Navbar Login */
+  
+  .header .navbar-bottom-login {
+    display: flex;
+    align-items:right;
+    margin-left: 1rem;
+  }
+  
+  .header .navbar-link-login {
+    margin-right: 1rem;
+    font-weight: 600;
+    
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .header .navbar-link-login:hover {
+    color: var(--orange-soda);
+  }
+  
+  .header .author-avatar {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top:0;
+    
+    height: 2.7rem;
+    width: 2.7;
+  }
+  
+  .header .author-avatar img {
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .header .author-avatar img:hover {
+    opacity: 0.7;
+  }
+  

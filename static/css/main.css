@@ -1,0 +1,203 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color:aliceblue;
+    font-family: 'Overpass Mono', monospace;
+    color: black;
+}
+
+.contact-page a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-page a:hover
+{
+    color: hsl(327, 90%, 28%);;
+}
+
+.contact-page .hide
+{
+    display: none;
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.contact-page .title
+{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 1.5% 0;
+}
+
+.contact-page .title-info
+{
+	padding-bottom: 2%;
+}
+
+.contact-page .form
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 2%;
+}
+
+.contact-page .input-group, .contact-page .textarea-group
+{
+    padding: 1% 0;
+}
+
+.contact-page input, .contact-page textarea
+{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 1.5%;
+    font-size: 20px;
+}
+
+.contact-page input:focus,.contact-page textarea:focus
+{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid hsl(327, 90%, 28%);;
+}
+
+.contact-page input::placeholder, .contact-page textarea::placeholder
+{
+    color: transparent;
+}
+
+.contact-page label
+{
+    color: #757575;
+    position: relative;
+    left: 0.5em;
+    top: -2em;
+	cursor: auto;
+    transition: 0.3s ease all;
+}
+
+.contact-page input:focus ~ label,.contact-page input:not(:placeholder-shown) ~ label
+{
+    top: -4em;
+    color: hsl(327, 90%, 28%);;
+    font-size: 15px;
+}
+
+.contact-page textarea:focus ~ label,.contact-page textarea:not(:placeholder-shown) ~ label
+{
+    top: -10.5em;
+    color: hsl(327, 90%, 28%);;
+    font-size: 15px;
+}
+
+.contact-page .button-div
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-page button
+{
+    padding: 2%;
+    width: 50%;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+    background-color: hsl(327, 90%, 28%);
+    color: white;
+    box-shadow: 0 0 10px #212121;
+}
+
+.contact-page button:hover
+{
+    background-color: white;
+    color: hsl(327, 90%, 28%);
+    cursor: pointer;
+    font-weight:600;
+}
+
+
+
+@media screen and (max-width: 1200px)
+{
+    .contact-page  .form
+    {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 680px)
+{
+    .contact-page .form
+    {
+		width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+	.contact-page .title
+	{
+		font-size: 40px;
+		padding-top: 6%;
+	}
+
+	.contact-page .title-info
+	{
+		font-size: 13px;
+	}
+	
+	.contact-page .form
+	{
+		padding: 6% 4%;
+		padding-top: 15%;
+	}
+
+	.contact-page .input-group, .contact-page .textarea-group
+    {
+		padding: 3% 0;
+	}
+	
+	.contact-page input,.contact-page  textarea
+	{
+		font-size: 15px;
+	}
+
+    .contact-page 	input:focus ~ label, .contact-page input:not(:placeholder-shown) ~ label
+	{
+		top: -3.5em;
+		left: 0.1em;
+	}
+	
+	.contact-page textarea:focus ~ label,.contact-page  textarea:not(:placeholder-shown) ~ label
+	{
+		top: -8.5em;
+		left: 0.2em;
+    }
+    
+    .contact-page button
+    {
+        font-size: 20px;
+    }
+}

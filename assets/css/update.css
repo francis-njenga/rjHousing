@@ -1,0 +1,280 @@
+
+
+:root {
+
+    --dark-jungle-green: hsl(188, 63%, 7%);
+    --prussian-blue: hsl(200, 69%, 14%);
+    --raisin-black-1: hsl(227, 29%, 13%);
+    --raisin-black-2: hsl(229, 17%, 19%);
+    --yellow-green: hsl(89, 72%, 45%);
+     --orange-soda: hsl(327, 90%, 28%);
+    --cultured-1: hsl(0, 0%, 93%);
+    --cultured-2: hsl(192, 24%, 96%);
+    --misty-rose: hsl(7, 56%, 91%);
+    --alice-blue: hsl(210, 100%, 97%);
+    --seashell: hsl(8, 100%, 97%);
+    --cadet: hsl(200, 15%, 43%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --opal: hsl(180, 20%, 62%);
+    --ff-nunito-sans: "Nunito Sans", sans-serif;
+    --ff-poppins: "Poppins", sans-serif;
+  
+    --fs-1: 1.875rem;
+    --fs-2: 1.5rem;
+    --fs-3: 1.375rem;
+    --fs-4: 1.125rem;
+    --fs-5: 0.875rem;
+    --fs-6: 0.813rem;
+    --fs-7: 0.75rem;
+  
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+   
+    --transition: 0.25s ease;
+  
+    --section-padding: 100px;
+  
+  
+    --shadow-1: 0 5px 20px 0 hsla(219, 56%, 21%, 0.1);
+    --shadow-2: 0 16px 32px hsla(188, 63%, 7%, 0.1);
+  
+  }
+ 
+ 
+   #form-update{
+       
+        
+    display: flex;
+    border-radius:20px;
+    /* border: 1px solid hsl(327, 90%, 28%);; */
+    box-shadow: 0px 0px 5px hsl(327, 90%, 28%); 
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:150vh;  
+    padding:3rem;
+    margin: 5px auto;
+    background-color:hsl(192, 24%, 96%);
+    z-index:1000;
+    
+  } 
+ 
+ 
+  .left {
+   
+    flex: 1;
+    margin-right: 5rem;
+    
+  }
+  
+  .right {
+    width:50%
+  }
+  
+  .right{
+    padding-left:4rem;
+    border-left: 3px solid  darkblue;
+    
+    
+  }
+  
+  form p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .submit-title p, .container p {
+     color: var(--orange-soda);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-600);
+    padding: 5px 20px;
+    background: hsla(9, 100%, 62%, 0.1);
+    width: max-content;
+    border-radius: 50px;
+    margin-inline: auto;
+    margin-bottom: 15px;
+  }
+  label {
+    color: var(--orange-soda);
+    font-size: 20px;
+    font-weight: var(--fw-600);
+    padding: 5px 20px;
+    background: hsla(9, 100%, 62%, 0.1);
+    width: max-content;
+    border-radius: 20px;    
+    margin-inline: auto;
+    margin-bottom: 15px;
+  
+  }
+  
+
+  input[type=text], input[type=date], input[type=number] ,select, textarea{
+         
+    display: inline-block;
+    padding: 5px;
+    margin-right:2px;
+    box-sizing: border-box;
+    border: 2px solid #ccc; 
+    border-radius:5px;
+    margin:10px;
+    width: 100%;
+    font-size: 16px;
+    background-color: white;
+    margin-left:15px;
+  }
+  input[type=text]:focus,input[type=date]:focus,input[type=number]:focus,select:focus,textarea:focus {
+  
+    border: 3px solid darkblue;
+    box-shadow: 0px 0px 10px darkblue;
+    outline: none;
+  }
+  textarea{
+    height:60px;
+  }
+  
+  input::placeholder,
+  textarea::placeholder,
+  select::placeholder {
+    color: #aaa;
+  }
+  
+  
+  .btn-submit {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #008ba3;
+  }
+  
+  
+  .error {
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+  }
+  
+  
+  .form-success {
+    font-size: 14px;
+    color: green;
+    margin-top: 5px;
+  }
+  
+  
+  .featured {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;  
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  color: #333;
+  }
+  
+  
+  .checkbox label {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  color: #333;
+  }
+  
+  
+  .checkbox input {
+  display: inline-block;
+  margin-right: 20px;
+  }
+  
+  
+  
+  /* Image upload button */
+
+  
+  .clearfix::before,
+  .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  .updatebutton {
+    background-color:hsl(192, 24%, 96%);
+    color:hsl(327, 90%, 28%);
+    position:relative;
+    margin-top: 100px;
+    padding:20px;
+    border: none;
+    cursor: pointer;
+    box-shadow:0px 0px 10px hsl(327, 90%, 28%);
+    transition: 0.5s;
+    border-radius: 20px;
+    font-size:25px;
+    font-weight:500px;
+    font-family:sans-serif;
+    margin-left:20px;
+    text-align:center;
+    text-transform:uppercase;
+    
+  
+  }
+  .image-box {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-box img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius:5px;
+  }
+  .image-box:hover img {
+    filter: blur(0.5px); 
+    cursor:pointer;
+    box-shadow: 0px 0px 10px hsl(327, 90%, 28%);
+
+  }
+  .edit-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    cursor: pointer;
+    color:darkblue;
+    
+  }
+  .edit-icon ion-icon{
+    font-size:50px;
+
+  }
+  
+  .image-box:hover .edit-icon {
+    display: block;
+  }
+  
+  /* Replace fontawesome icons with your own edit icon */
+  .fas.fa-pencil-alt:before {
+    content: "Edit";
+  }
+ 
